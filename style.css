@@ -1,0 +1,401 @@
+
+/*===== The Main Styles nga part =====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jersey 10', sans-serif;
+}
+
+body {
+  background: url("Images/quizITbg.jpg") no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.transparentbg {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px); 
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 80%;
+  margin: 130px auto 50px; 
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*========== Header and Navigation nga Part ==========*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 99;
+}
+
+.logo {
+    display: inline;
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.Quiz { color:  #0e29ae; }
+.IT { color: #000000; }
+
+.navigation a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #0e29ae;
+  font-weight: 300;
+  font-size: 1.6em;
+  font-style: "Poppins", sans-serif;
+}
+
+.navigation a:hover {
+  color: #000000;
+}
+
+.navigation a.active {
+  color: black;
+}
+
+/*=============== Homepage nga part ===============*/
+.main-text h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  font-weight: 350;
+}
+.main-text p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  font-weight: 200;
+  font-family: Itim, sans-serif;
+  line-height: 1.5em;
+}
+
+/* Layout sa subjects */
+.subjects-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.subjectbox {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.subjectbox:hover { transform: scale(1.05);}
+
+.subjectbox img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-section h2,
+.right-section h2 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+/* Scrollable Right Section */
+.scroll-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  max-width: 400px;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Arrows */
+.arrow {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.arrow:hover {
+  background: #0e29ae;
+}
+
+/* Responsive Fix */
+@media (max-width: 850px) {
+  .subjects-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .scroll-container {
+    max-width: 300px;
+  }
+} 
+
+.blurred {
+  filter: blur(8px);
+  transition: filter 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+/*========== Modul styles ( sa quiz kung mag start ) ==========*/
+.modul {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/*=============== Popup Box ===============*/
+.modulcontent {
+ background: rgba(255, 255, 255, 0.748);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 20px 50px;
+  text-align: center;
+  width: 690px;
+  height: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: Verdana;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2.3em;
+  color: #333;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #000;
+}
+
+.popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Robot / Good Luck image */
+.goodluck-icon {
+  height: 450px;
+}
+
+/* TEXT AREA */
+.modul-text {
+  text-align: center;
+}
+
+.modul-text h2 {
+  font-size: 2.6em;
+  margin-bottom: 15px;
+}
+
+.modul-text p {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+/*=============== Mga buttons sa Module  ================*/
+
+.module-btn {
+  display: block;
+  width: 350px;
+  margin: 12px auto;
+  padding: 15px 18px;
+
+  background: #2847df;
+  color: white;
+  border: none;
+  border-radius: 25px;
+
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.2s;
+  letter-spacing: 1px;
+}
+
+.module-btn:hover {
+  transform: scale(1.03);
+  background: #1d32a5;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/*=============== About Us nga Part ===============*/
+.about-section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px); 
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 80%;
+  margin: 90px auto 50px;
+  text-align: center;
+  gap: 100px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+  color: #001a80;
+  font-size: 3em;
+  font-weight: 590;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  width: 500px;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+}
+  
+
+.about-right {
+  flex: 1;
+  max-width: 700px;
+  text-align: left;
+}
+
+
+.about-right p {
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.developer-title {
+  color: #001a80;
+  font-size: 3em;
+  font-weight: 590;  
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+
+.team-member img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 80%;
+  border: 2px solid rgba(255, 255, 255, 0.4)
+}
+
+.team-member h3 {
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 500;
+}
+
+.about-bottom {
+  margin-top: 30px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ada6a6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-right {
+    margin-top: 10px;
+  }
+}
+
+/*==================== Contact Us nga part ====================*/

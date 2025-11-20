@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizIT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <h2 class="logo"><span class="Quiz">Quiz</span><span class="IT">IT</span></h2>
+    <nav class="navigation">
+      <a href="#" class="active">Home</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="ContactUs.html">Contact Us</a>
+    </nav>
+  </header>
+  <div class="page-content">
+    <div class="transparentbg">
+      <div class="main-text">
+        <h1>Grow Your Aura of Intelligence</h1>
+        <p>
+          Fuel your curiosity, level up your brainpower,<br />
+          and let your IT aura shine brighter than ever!
+        </p>
+      </div>
+
+      <!-- Subject Available Section -->
+      <div class="subjects-layout">
+        <!-- Left section -->
+        <div class="left-section">
+          <h2>Subject Available:</h2>
+          <div class="subjectbox available" id="programmingbox">
+            <img src="Images/programming.png" alt="Programming" />
+            <p>Programming</p>
+          </div>
+        </div>
+
+        <!-- Right section -->
+        <div class="right-section">
+          <h2>Available Soon:</h2>
+          <div class="scroll-area">
+            <button class="arrow left" id="leftArrow">&lt;</button>
+
+            <div class="scroll-container" id="scrollContainer">
+              <div class="subjectbox soon">
+                <img src="Images/hardware.png" alt="Hardware" />
+                <p>Hardware</p>
+              </div>
+              <div class="subjectbox soon">
+                <img src="Images/networking.png" alt="Networking" />
+                <p>Networking</p>
+              </div>
+              <div class="subjectbox soon">
+                <img src="Images/cybersecurity.png" alt="Cybersecurity" />
+                <p>Cybersecurity</p>
+              </div>
+              <div class="subjectbox soon">
+                <img src="Images/ui_ux.png" alt="Database" />
+                <p>UI/UX</p>
+              </div>
+            </div>
+
+            <button class="arrow right" id="rightArrow">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modul" id="programmingmodul">
+
+    <div class="modulcontent">
+      <span class="closebtn">&times;</span>
+
+      <div class="popup-content">
+        <img src="Images/goodlck.png" alt="Good Luck Icon" class="goodluck-icon" />
+
+        <div class="modul-text">
+          <h2>PROGRAMMING</h2>
+          <p>Please select: </p>
+
+          <button class="module-btn">MODULE 1: HISTORY</button>
+          <button class="module-btn">MODULE 2: BASIC SYNTAX</button>
+          <button class="module-btn">MODULE 3: HISTORY AND BASIC SYNTAX</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
