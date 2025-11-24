@@ -399,3 +399,128 @@ header {
 }
 
 /*==================== Contact Us nga part ====================*/
+
+
+
+/*==================== Contact Us Section ====================*/
+
+.contact-section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 80%;
+  margin: 85px auto 60px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-section h1 {
+  color: #000;
+  font-size: 3em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Main layout: THREE COLUMNS like reference */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 1px;
+  flex-wrap: wrap;
+}
+
+/* LEFT envelope */
+.contact-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.contact-left img {
+  width: 150%;
+  max-width: 400px;
+  opacity: 0.9;
+}
+
+/* MIDDLE robot image */
+.contact-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.contact-middle img {
+  width: 100%;
+  max-width: 450px;
+  opacity: 0.5;
+}
+
+/* RIGHT form */
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 18px;
+}
+
+/* Bigger textarea */
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+/* Button same style as screenshot */
+.contact-btn {
+  width: 100%;
+  padding: 16px;
+  background: #2847df;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5em;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.25s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.03);
+  background: #1d32a5;
+}
+
+/*========= Responsive ==========*/
+@media (max-width: 1050px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left img,
+  .contact-middle img {
+    width: 70%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
