@@ -21,7 +21,7 @@
         "C. System.out.println('Hello Java');",
         "D. Console.write('Hello Java');"
       ],
-       "correct": 1
+       "correct": 2
     }
 ,
     {
@@ -45,7 +45,7 @@
         "C. boolean",
         "D. String"
       ],
-       "correct": 1
+       "correct": 3
     }
 ,
     {
@@ -57,7 +57,7 @@
         "C. I love Java",
         "D. Error"
       ],
-       "correct": 1
+       "correct": 3
     }
   ]
 }

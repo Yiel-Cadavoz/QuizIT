@@ -20,7 +20,7 @@
         "C. GreenTalk",
         "D. Pine"
       ],
-       "correct": 1
+       "correct": 0
     },
  {
       "module": "MODULE 1: HISTORY",
@@ -31,7 +31,7 @@
         "C. 1995",
         "D. 1998"
       ],
-       "correct": 1
+       "correct": 2
     },
     {
       "module": "MODULE 1: HISTORY",
@@ -54,7 +54,7 @@
         "C. Platform Independence",
         "D. Free Licensing"
       ],
-       "correct": 1
+       "correct": 2
     }
 
 

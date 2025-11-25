@@ -20,7 +20,7 @@
         "C. GreenTalk",
         "D. Pine"
       ],
-       "correct": 1
+       "correct": 0
     },
  {
       "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
@@ -31,7 +31,7 @@
         "C. 1995",
         "D. 1998"
       ],
-       "correct": 1
+       "correct": 2
     },
     
     {
@@ -43,7 +43,7 @@
         "C. System.out.println('Hello Java');",
         "D. Console.write('Hello Java');"
       ],
-       "correct": 1
+       "correct": 2
     }
 ,
     {
@@ -55,7 +55,7 @@
         "C. I love Java",
         "D. Error"
       ],
-       "correct": 1
+       "correct": 3
     }
   ]
 }
