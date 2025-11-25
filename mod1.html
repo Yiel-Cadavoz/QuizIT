@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Page</title>
+    <title>Module 1</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,23 +26,20 @@
 
         <div class="quiz-content">
 
-            <div class="module-title">MODULE 1: HISTORY</div>
+    <div class="module-title" id="moduleTitle"></div>
 
-            <div class="quiz-question">
-                Who developed the Java programming language?
-            </div>
+<div class="quiz-question" id="quizQuestion"></div>
 
-            <div class="choices-grid">
-                <button class="choice-btn">A. Bill Gates</button>
-                <button class="choice-btn">B. James Gosling</button>
-                <button class="choice-btn">C. Dennis Ritchie</button>
-                <button class="choice-btn">D. Bjarne Stroustrup</button>
-            </div>
+<div class="choices-grid" id="choicesGrid"></div>
 
-            <div class="quiz-footer">
-                <span>1/5</span>
-                <span class="next-btn">></span>
-            </div>
+
+
+
+
+      <div class="quiz-footer">
+    <div class="footer-center">1/5</div>
+    <span class="next-btn">></span>
+</div>
 
             <div class="progress-bar">
                 <div class="progress-fill"></div>
@@ -50,6 +47,69 @@
 
         </div>
     </div>
+
+
+
+<script>
+let currentIndex = 0;
+let questions = [];
+
+// Elements
+const moduleTitle = document.getElementById("moduleTitle");
+const quizQuestion = document.getElementById("quizQuestion");
+const choicesGrid = document.getElementById("choicesGrid");
+const footerCenter = document.querySelector(".footer-center");
+const nextBtn = document.querySelector(".next-btn");
+
+// Load JSON file
+fetch("questions.json")
+  .then(response => response.json())
+  .then(data => {
+    questions = data.questions;
+    loadQuestion(currentIndex);
+  })
+  .catch(error => console.error("Error loading JSON:", error));
+
+// Function to load a question
+function loadQuestion(index) {
+    const q = questions[index];
+
+    moduleTitle.textContent = q.module;
+    quizQuestion.textContent = q.question;
+    choicesGrid.innerHTML = "";
+
+    q.choices.forEach(choice => {
+        const btn = document.createElement("button");
+        btn.className = "choice-btn";
+        btn.textContent = choice;
+
+        btn.addEventListener("click", () => {
+            // Optional: highlight selected choice
+            choicesGrid.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
+            btn.classList.add("selected");
+        });
+
+        choicesGrid.appendChild(btn);
+    });
+
+    // Update footer page number
+    footerCenter.textContent = `${index + 1}/${questions.length}`;
+}
+
+// Next button click
+nextBtn.addEventListener("click", () => {
+    if (currentIndex < questions.length - 1) {
+        currentIndex++;
+        loadQuestion(currentIndex);
+    } else {
+        alert("Quiz finished!");
+        // Optionally reset quiz:
+        // currentIndex = 0;
+        // loadQuestion(currentIndex);
+    }
+});
+</script>
+
 
 </body>
 </html>

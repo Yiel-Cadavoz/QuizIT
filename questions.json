@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Who developed the Java programming language?",
+      "choices": [
+        "A. Bill Gates",
+        "B. James Gosling",
+        "C. Dennis Ritchie",
+        "D. Bjarne Stroustrup"
+      ]
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Who developed the C programming language?",
+      "choices": [
+        "A. Bill Gates",
+        "B. James Gosling",
+        "C. Dennis Ritchie",
+        "D. Bjarne Stroustrup"
+      ]
+    },
+ {
+      "module": "MODULE 1: HISTORY",
+      "question": "Who developed the b programming language?",
+      "choices": [
+        "A. Bill Gates",
+        "B. James Gosling",
+        "C. Dennis Ritchie",
+        "D. Bjarne Stroustrup"
+      ]
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Who developed the d programming language?",
+      "choices": [
+        "A. Bill Gates",
+        "B. James Gosling",
+        "C. Dennis Ritchie",
+        "D. Bjarne Stroustrup"
+      ]
+    }
+
+
+
+
+  ]
+}
