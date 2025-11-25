@@ -1,0 +1,63 @@
+{
+  "questions": [
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following is a valid java identifier?",
+      "choices": [
+        "A. 1value",
+        "B. _value",
+        "C. @value",
+        "D. -value"
+      ],
+       "correct": 1
+    }
+,
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": " What is the correct syntax to output “Hello Java” to the console?",
+      "choices": [
+        "A. print('Hello Java');",
+        "B. echo('Hello Java');",
+        "C. System.out.println('Hello Java');",
+        "D. Console.write('Hello Java');"
+      ],
+       "correct": 1
+    }
+,
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": " What will be the output of the following code? public class Test {    public static void main(String[] args) {        int x = 5;        int y = 2;        System.out.println(x / y);    }}",
+      "choices": [
+        "A. 2.5",
+        "B. 2",
+        "C. 3",
+        "D. Error"
+      ],
+       "correct": 1
+    }
+,
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following is not a primitive data type in Java?",
+      "choices": [
+        "A. int",
+        "B. float",
+        "C. boolean",
+        "D. String"
+      ],
+       "correct": 1
+    }
+,
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What will the following code print? public class Example {    public static void main(String[] args) {        String lang = 'Java';        System.out.println('I love '' + lang);    }}",
+      "choices": [
+        "A. I love",
+        "B. lang",
+        "C. I love Java",
+        "D. Error"
+      ],
+       "correct": 1
+    }
+  ]
+}

@@ -13,39 +13,49 @@
     },
     {
       "module": "MODULE 1: HISTORY",
-      "question": "Who developed the C programming language?",
+      "question": "What is the original name of Java?",
       "choices": [
-        "A. Bill Gates",
-        "B. James Gosling",
-        "C. Dennis Ritchie",
-        "D. Bjarne Stroustrup"
+        "A. Oak",
+        "B. Maple",
+        "C. GreenTalk",
+        "D. Pine"
       ],
        "correct": 1
     },
  {
       "module": "MODULE 1: HISTORY",
-      "question": "Who developed the b programming language?",
+      "question": "In which year was Java officially released?",
       "choices": [
-        "A. Bill Gates",
-        "B. James Gosling",
-        "C. Dennis Ritchie",
-        "D. Bjarne Stroustrup"
+        "A. 1991",
+        "B. 1993",
+        "C. 1995",
+        "D. 1998"
       ],
        "correct": 1
     },
     {
       "module": "MODULE 1: HISTORY",
-      "question": "Who developed the d programming language?",
+      "question": "Which company acquired Sun Microsystems, the original creator of Java?",
       "choices": [
-        "A. Bill Gates",
-        "B. James Gosling",
-        "C. Dennis Ritchie",
-        "D. Bjarne Stroustrup"
+        "A. Microsoft",
+        "B. Oracle",
+        "C. Google",
+        "D. IBM"
       ],
        "correct": 1
     }
-
-
+,
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "The main idea behind Java's slogan - Write once, Run anywhere - ?",
+      "choices": [
+        "A. Speed",
+        "B. Security",
+        "C. Platform Independence",
+        "D. Free Licensing"
+      ],
+       "correct": 1
+    }
 
 
   ]
