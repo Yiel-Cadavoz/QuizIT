@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <header>
-       <h2 class="logo"><span class="Quiz">Quiz</span><span class="IT">IT</span></h2>
+        <h2 class="logo"><span class="Quiz">Quiz</span><span class="IT">IT</span></h2>
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
             <a href="AboutUs.html">About Us</a>
@@ -21,51 +23,51 @@
 
     <div class="quiz-container">
 
-    <img src="Images/quizrob.png" class="quiz-robot" />
+        <img src="Images/quizrob.png" class="quiz-robot" />
 
 
         <div class="quiz-content">
 
-    <div class="module-title" id="moduleTitle"></div>
+            <div class="module-title" id="moduleTitle"></div>
 
-<div class="quiz-question" id="quizQuestion"></div>
+            <div class="quiz-question" id="quizQuestion"></div>
 
-<div class="choices-grid" id="choicesGrid"></div>
-
-
-
-<div id="resultPopup" class="result-popup hidden">
-    <div class="result-box">
-
-        <div class="left-side">
-            <img src="Images/congrats.png" class="result-robot">
-        </div>
-
-        <div class="right-side">
-            <h2 class="result-title">WELL DONE!</h2>
-            <p class="result-message">Nice work — you're improving every time.</p>
-
-      <h3 class="result-score">
-  Score:<br>
-  <span id="finalScore"></span>
-</h3>
+            <div class="choices-grid" id="choicesGrid"></div>
 
 
-            <div class="result-buttons">
-                <button onclick="window.location.href='index.html'" class="home-btn">HOME</button>
-                <button onclick="location.reload()" class="retry-btn">RETRY</button>
+
+            <div id="resultPopup" class="result-popup hidden">
+                <div class="result-box">
+
+                    <div class="left-side">
+                        <img src="Images/congrats.png" class="result-robot">
+                    </div>
+
+                    <div class="right-side">
+                        <h2 class="result-title">WELL DONE!</h2>
+                        <p class="result-message">Nice work — you're improving every time.</p>
+
+                        <h3 class="result-score">
+                            Score:<br>
+                            <span id="finalScore"></span>
+                        </h3>
+
+
+                        <div class="result-buttons">
+                            <button onclick="window.location.href='index.html'" class="home-btn">HOME</button>
+                            <button onclick="location.reload()" class="retry-btn">RETRY</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-
-    </div>
-</div>
 
 
 
-      <div class="quiz-footer">
-    <div class="footer-center">1/5</div>
-    <span class="next-btn">></span>
-</div>
+            <div class="quiz-footer">
+                <div class="footer-center">1/5</div>
+                <span class="next-btn">></span>
+            </div>
 
             <div class="progress-bar">
                 <div class="progress-fill"></div>
@@ -76,78 +78,93 @@
 
 
 
-<script>
-let currentIndex = 0;
-let questions = [];
-let userAnswers = []; // store selected index
-let score = 0;
+    <script>
+        let currentIndex = 0;
+        let questions = [];
+        let userAnswers = [];
+        let score = 0;
 
-// Elements
-const moduleTitle = document.getElementById("moduleTitle");
-const quizQuestion = document.getElementById("quizQuestion");
-const choicesGrid = document.getElementById("choicesGrid");
-const footerCenter = document.querySelector(".footer-center");
-const nextBtn = document.querySelector(".next-btn");
 
-// Load JSON
-fetch("questions3.json")
-  .then(res => res.json())
-  .then(data => {
-    questions = data.questions;
-    userAnswers = Array(questions.length).fill(null); // initialize
-    loadQuestion(currentIndex);
-  })
-  .catch(err => console.error(err));
+        const moduleTitle = document.getElementById("moduleTitle");
+        const quizQuestion = document.getElementById("quizQuestion");
+        const choicesGrid = document.getElementById("choicesGrid");
+        const footerCenter = document.querySelector(".footer-center");
+        const nextBtn = document.querySelector(".next-btn");
+        const progressFill = document.querySelector(".progress-fill"); // this is new
 
-// Function to load a question
-function loadQuestion(index) {
-    const q = questions[index];
-    moduleTitle.textContent = q.module;
-    quizQuestion.textContent = q.question;
-    choicesGrid.innerHTML = "";
 
-    q.choices.forEach((choice, i) => {
-        const btn = document.createElement("button");
-        btn.className = "choice-btn";
-        btn.textContent = choice;
+        function updateProgress() {
+          
+            footerCenter.textContent = `${currentIndex + 1}/${questions.length}`;
 
-        // Highlight previously selected choice
-        if (userAnswers[index] === i) btn.classList.add("selected");
+            
+            const progressPercent = ((currentIndex + 1) / questions.length) * 100;
+            progressFill.style.width = `${progressPercent}%`;
+        }
 
-        btn.addEventListener("click", () => {
-            if (userAnswers[index] === null) { // only first selection
-                userAnswers[index] = i;
-                btn.classList.add("selected"); // stays blue
+        fetch("questions3.json")
+            .then(res => res.json())
+            .then(data => {
+                questions = data.questions;
+                userAnswers = Array(questions.length).fill(null);
+                loadQuestion(currentIndex);
+            })
+            .catch(err => console.error(err));
+
+
+        function loadQuestion(index) {
+            const q = questions[index];
+            moduleTitle.textContent = q.module;
+            quizQuestion.textContent = q.question;
+            choicesGrid.innerHTML = "";
+
+            q.choices.forEach((choice, i) => {
+                const btn = document.createElement("button");
+                btn.className = "choice-btn";
+                btn.textContent = choice;
+
+
+                if (userAnswers[index] === i) btn.classList.add("selected");
+
+                btn.addEventListener("click", () => {
+
+                    userAnswers[index] = i;
+
+                    Array.from(choicesGrid.children).forEach(b => b.classList.remove("selected"));
+                    btn.classList.add("selected");
+                });
+                choicesGrid.appendChild(btn);
+            });
+            updateProgress(); 
+            footerCenter.textContent = `${index + 1}/${questions.length}`;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            const selectedIndex = userAnswers[currentIndex];
+
+
+            if (selectedIndex === null) {
+                alert("Please select an answer before moving to the next question.");
+                return;
+            }
+
+
+            if (selectedIndex === questions[currentIndex].correct) {
+                score++;
+            }
+
+
+            if (currentIndex < questions.length - 1) {
+                currentIndex++;
+                loadQuestion(currentIndex);
+            } else {
+                document.getElementById("finalScore").textContent = `${score}/${questions.length}`;
+                document.getElementById("resultPopup").classList.remove("hidden");
             }
         });
-
-        choicesGrid.appendChild(btn);
-    });
-
-    footerCenter.textContent = `${index + 1}/${questions.length}`;
-}
-
-// Next button click
-nextBtn.addEventListener("click", () => {
-    const q = questions[currentIndex];
-    const selectedIndex = userAnswers[currentIndex];
-
-    // Update score if correct
-    if (selectedIndex !== null && selectedIndex === q.correct) {
-        score++;
-    }
-
-    // Move to next question
-    if (currentIndex < questions.length - 1) {
-        currentIndex++;
-        loadQuestion(currentIndex);
-   } else {
-    document.getElementById("finalScore").textContent = `${score}/${questions.length}`;
-    document.getElementById("resultPopup").classList.remove("hidden");
-}
-});
-</script>
+    </script>
 
 
 </body>
+
 </html>
