@@ -8,7 +8,8 @@
         "B. James Gosling",
         "C. Dennis Ritchie",
         "D. Bjarne Stroustrup"
-      ]
+      ],
+       "correct": 1
     },
     {
       "module": "MODULE 1: HISTORY",
@@ -18,7 +19,8 @@
         "B. James Gosling",
         "C. Dennis Ritchie",
         "D. Bjarne Stroustrup"
-      ]
+      ],
+       "correct": 1
     },
  {
       "module": "MODULE 1: HISTORY",
@@ -28,7 +30,8 @@
         "B. James Gosling",
         "C. Dennis Ritchie",
         "D. Bjarne Stroustrup"
-      ]
+      ],
+       "correct": 1
     },
     {
       "module": "MODULE 1: HISTORY",
@@ -38,7 +41,8 @@
         "B. James Gosling",
         "C. Dennis Ritchie",
         "D. Bjarne Stroustrup"
-      ]
+      ],
+       "correct": 1
     }
 
 

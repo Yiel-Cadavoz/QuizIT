@@ -53,6 +53,8 @@
 <script>
 let currentIndex = 0;
 let questions = [];
+let userAnswers = []; // store selected index
+let score = 0;
 
 // Elements
 const moduleTitle = document.getElementById("moduleTitle");
@@ -61,51 +63,60 @@ const choicesGrid = document.getElementById("choicesGrid");
 const footerCenter = document.querySelector(".footer-center");
 const nextBtn = document.querySelector(".next-btn");
 
-// Load JSON file
+// Load JSON
 fetch("questions.json")
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
     questions = data.questions;
+    userAnswers = Array(questions.length).fill(null); // initialize
     loadQuestion(currentIndex);
   })
-  .catch(error => console.error("Error loading JSON:", error));
+  .catch(err => console.error(err));
 
 // Function to load a question
 function loadQuestion(index) {
     const q = questions[index];
-
     moduleTitle.textContent = q.module;
     quizQuestion.textContent = q.question;
     choicesGrid.innerHTML = "";
 
-    q.choices.forEach(choice => {
+    q.choices.forEach((choice, i) => {
         const btn = document.createElement("button");
         btn.className = "choice-btn";
         btn.textContent = choice;
 
+        // Highlight previously selected choice
+        if (userAnswers[index] === i) btn.classList.add("selected");
+
         btn.addEventListener("click", () => {
-            // Optional: highlight selected choice
-            choicesGrid.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
-            btn.classList.add("selected");
+            if (userAnswers[index] === null) { // only first selection
+                userAnswers[index] = i;
+                btn.classList.add("selected"); // stays blue
+            }
         });
 
         choicesGrid.appendChild(btn);
     });
 
-    // Update footer page number
     footerCenter.textContent = `${index + 1}/${questions.length}`;
 }
 
 // Next button click
 nextBtn.addEventListener("click", () => {
+    const q = questions[currentIndex];
+    const selectedIndex = userAnswers[currentIndex];
+
+    // Update score if correct
+    if (selectedIndex !== null && selectedIndex === q.correct) {
+        score++;
+    }
+
+    // Move to next question
     if (currentIndex < questions.length - 1) {
         currentIndex++;
         loadQuestion(currentIndex);
     } else {
-        alert("Quiz finished!");
-        // Optionally reset quiz:
-        // currentIndex = 0;
-        // loadQuestion(currentIndex);
+        alert(`Quiz finished! Your score: ${score}/${questions.length}`);
     }
 });
 </script>
