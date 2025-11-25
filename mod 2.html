@@ -14,7 +14,7 @@
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
             <a href="AboutUs.html">About Us</a>
-            <a href="ContactUs.html">Contact</a>
+            <a href="ContactUs.html">Contact Us</a>
         </nav>
     </header>
 
@@ -31,6 +31,34 @@
 <div class="quiz-question" id="quizQuestion"></div>
 
 <div class="choices-grid" id="choicesGrid"></div>
+
+
+
+<div id="resultPopup" class="result-popup hidden">
+    <div class="result-box">
+
+        <div class="left-side">
+            <img src="Images/congrats.png" class="result-robot">
+        </div>
+
+        <div class="right-side">
+            <h2 class="result-title">WELL DONE!</h2>
+            <p class="result-message">Nice work — you're improving every time.</p>
+
+      <h3 class="result-score">
+  Score:<br>
+  <span id="finalScore"></span>
+</h3>
+
+
+            <div class="result-buttons">
+                <button onclick="window.location.href='index.html'" class="home-btn">HOME</button>
+                <button onclick="location.reload()" class="retry-btn">RETRY</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
 
@@ -115,9 +143,11 @@ nextBtn.addEventListener("click", () => {
     if (currentIndex < questions.length - 1) {
         currentIndex++;
         loadQuestion(currentIndex);
-    } else {
-        alert(`Quiz finished! Your score: ${score}/${questions.length}`);
-    }
+  } else {
+    document.getElementById("finalScore").textContent = `${score}/${questions.length}`;
+    document.getElementById("resultPopup").classList.remove("hidden");
+}
+
 });
 </script>
 
