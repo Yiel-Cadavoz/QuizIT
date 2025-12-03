@@ -9,7 +9,7 @@
         "C. Dennis Ritchie",
         "D. Bjarne Stroustrup"
       ],
-       "correct": 1
+      "correct": 1
     },
     {
       "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
@@ -20,9 +20,9 @@
         "C. GreenTalk",
         "D. Pine"
       ],
-       "correct": 0
+      "correct": 0
     },
- {
+    {
       "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
       "question": "In which year was Java officially released?",
       "choices": [
@@ -31,9 +31,8 @@
         "C. 1995",
         "D. 1998"
       ],
-       "correct": 2
+      "correct": 2
     },
-    
     {
       "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
       "question": " What is the correct syntax to output “Hello Java” to the console?",
@@ -43,9 +42,8 @@
         "C. System.out.println('Hello Java');",
         "D. Console.write('Hello Java');"
       ],
-       "correct": 2
-    }
-,
+      "correct": 2
+    },
     {
       "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
       "question": "What will the following code print? public class Example {    public static void main(String[] args) {        String lang = 'Java';        System.out.println('I love '' + lang);    }}",
@@ -55,7 +53,238 @@
         "C. I love Java",
         "D. Error"
       ],
-       "correct": 3
+      "correct": 3
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which company acquired Sun Microsystems, the original creator of Java?",
+      "choices": [
+        "A. Microsoft",
+        "B. Oracle",
+        "C. Google",
+        "D. IBM"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which of the following is not a primitive data type in Java?",
+      "choices": [
+        "A. int",
+        "B. float",
+        "C. boolean",
+        "D. String"
+      ],
+      "correct": 3
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Java was initially created for what type of device?",
+      "choices": [
+        "A. Desktop Computers",
+        "B. Web Browsers",
+        "C. Smart Appliances",
+        "D. Mobile Phones"
+      ],
+      "correct": 3
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which team within Sun Microsystems worked on developing Java?",
+      "choices": [
+        "A. Blue Team",
+        "B. Green Team",
+        "C. Red Team",
+        "D. Yellow Team"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which keyword is used to define a class in Java?",
+      "choices": [
+        "A. define",
+        "B. new",
+        "C. class",
+        "D. object"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which method is required as an entry point in every Java program?",
+      "choices": [
+        "A. start()",
+        "B. run()",
+        "C. main()",
+        "D. execute()"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Java was originally designed for what kind of consumer product?",
+      "choices": [
+        "A. Television Set-Top Boxes",
+        "B. Game Consoles",
+        "C. Mobile Phones",
+        "D. Desktop Applications"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which of the following symbols is used to end a Java statement?",
+      "choices": [
+        "A. .",
+        "B. ;",
+        "C. :",
+        "D. ,"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which of these is NOT allowed in Java variable names?",
+      "choices": [
+        "A. Underscore",
+        "B. Numbers (not at the start)",
+        "C. Spaces",
+        "D. Letters"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which operator is used for concatenating strings?",
+      "choices": [
+        "A. *",
+        "B. &",
+        "C. +",
+        "D. %"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which operator compares two values for equality?",
+      "choices": [
+        "A. =",
+        "B. ==",
+        "C. !=",
+        "D. equals"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which escape sequence creates a new line?",
+      "choices": [
+        "A. \\r",
+        "B. \\n",
+        "C. \\t",
+        "D. \\s"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Java's bytecode is executed using:",
+      "choices": [
+        "A. CPU Direct Execution",
+        "B. Java Virtual Machine",
+        "C. Hardware Acceleration",
+        "D. Native Compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "What is the name of the virtual machine that runs Java bytecode?",
+      "choices": [
+        "A. JDK",
+        "B. JVM",
+        "C. JRE",
+        "D. JIT"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "What is Java's file extension for source code?",
+      "choices": [
+        "A. .class",
+        "B. .jav",
+        "C. .java",
+        "D. .jvm"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "What will System.out.println(3 + 4 + \"Java\"); print?",
+      "choices": [
+        "A. 7Java",
+        "B. 34Java",
+        "C. Java7",
+        "D. 3 + 4Java"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "What does the 'public' keyword mean in Java?",
+      "choices": [
+        "A. Accessible only inside the method",
+        "B. Accessible only inside the class",
+        "C. Accessible from anywhere",
+        "D. Accessible only in the package"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which data type stores true/false values?",
+      "choices": [
+        "A. int",
+        "B. boolean",
+        "C. char",
+        "D. float"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which datatype should be used for decimal values in Java?",
+      "choices": [
+        "A. int",
+        "B. double",
+        "C. char",
+        "D. boolean"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "Which of the following is a valid java identifier?",
+      "choices": [
+        "A. 1value",
+        "B. _value",
+        "C. @value",
+        "D. -value"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 3: HISTORY AND BASIC SYNTAX",
+      "question": "What is the correct syntax to output “Hello Java” using double quotes?",
+      "choices": [
+        "A. print('Hello Java');",
+        "B. echo('Hello Java');",
+        "C. System.out.println(\"Hello Java\");",
+        "D. Console.write('Hello Java');"
+      ],
+      "correct": 2
     }
   ]
 }
