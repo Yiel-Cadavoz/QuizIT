@@ -108,26 +108,19 @@
         fetch("questions.json")
             .then(res => res.json())
             .then(data => {
-                // shuffle function
                 function shuffle(array) {
                     return array.sort(() => Math.random() - 0.5);
                 }
 
-                fetch("questions.json")
-                    .then(res => res.json())
-                    .then(data => {
-                        let shuffled = shuffle(data.questions);
+                let shuffled = shuffle(data.questions);
 
-                        questions = shuffled.slice(0, 5);
+                questions = shuffled.slice(0, 5);
 
-                        userAnswers = Array(questions.length).fill(null);
+                userAnswers = Array(questions.length).fill(null);
 
-                        loadQuestion(currentIndex);
-                    })
-                    .catch(err => console.error(err));
-
+                loadQuestion(currentIndex);
             })
-            .catch(err => console.error(err));
+            .catch (err => console.error(err));
 
 
         function loadQuestion(index) {
