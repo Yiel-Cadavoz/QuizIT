@@ -34,12 +34,12 @@
             </div>
 
 
-            <form class="contact-form" action="https://formsubmit.co/quizit.inc@gmail.com" method="POST">
+            <form id="contactForm" class="contact-form">
 
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New message from QuizIT Contact Form!">
-                <input type="hidden" name="_autoresponse" value="Thank you for contacting QuizIT! We will reply as soon as possible.">
-
+                <input type="hidden" name="_autoresponse"
+                    value="Thank you for contacting QuizIT! We will reply as soon as possible.">
 
                 <label>Full Name</label>
                 <input type="text" name="Full Name" required placeholder="Full Name">
@@ -54,13 +54,15 @@
                 <textarea name="Message" required placeholder="Message"></textarea>
 
                 <button class="contact-btn" type="submit">SEND MESSAGE</button>
+
             </form>
 
+            <p id="statusMessage" style="margin-top:10px;"></p>
 
         </div>
     </section>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>

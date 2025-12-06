@@ -30,5 +30,32 @@ window.addEventListener("click", (event) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("statusMessage");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch("https://formsubmit.co/quizit.inc@gmail.com", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thank you! Your message has been sent.";
+                form.reset();
+            } else {
+                status.innerHTML = "Something went wrong. Please try again.";
+            }
+        })
+        .catch(error => {
+            status.innerHTML = "Failed to send message. Please check your connection.";
+        });
+    });
+});
+
 
 
