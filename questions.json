@@ -9,7 +9,7 @@
         "C. Dennis Ritchie",
         "D. Bjarne Stroustrup"
       ],
-       "correct": 1
+      "correct": 1
     },
     {
       "module": "MODULE 1: HISTORY",
@@ -20,9 +20,9 @@
         "C. GreenTalk",
         "D. Pine"
       ],
-       "correct": 0
+      "correct": 0
     },
- {
+    {
       "module": "MODULE 1: HISTORY",
       "question": "In which year was Java officially released?",
       "choices": [
@@ -31,7 +31,7 @@
         "C. 1995",
         "D. 1998"
       ],
-       "correct": 2
+      "correct": 2
     },
     {
       "module": "MODULE 1: HISTORY",
@@ -42,9 +42,8 @@
         "C. Google",
         "D. IBM"
       ],
-       "correct": 1
-    }
-,
+      "correct": 1
+    },
     {
       "module": "MODULE 1: HISTORY",
       "question": "The main idea behind Java's slogan - Write once, Run anywhere - ?",
@@ -54,9 +53,249 @@
         "C. Platform Independence",
         "D. Free Licensing"
       ],
-       "correct": 2
+      "correct": 2
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Java was initially created for what type of device?",
+      "choices": [
+        "A. Desktop Computers",
+        "B. Web Browsers",
+        "C. Smart Appliances",
+        "D. Mobile Phones"
+      ],
+      "correct": 3
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Which team within Sun Microsystems worked on developing Java?",
+      "choices": [
+        "A. Blue Team",
+        "B. Green Team",
+        "C. Red Team",
+        "D. Yellow Team"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What was the first public project that used Java?",
+      "choices": [
+        "A. JavaFX",
+        "B. HotJava Browser",
+        "C. Android OS",
+        "D. NetBeans IDE"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Java was originally designed for what kind of consumer product?",
+      "choices": [
+        "A. Television Set-Top Boxes",
+        "B. Game Consoles",
+        "C. Mobile Phones",
+        "D. Desktop Applications"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Which programming language influenced Java the most?",
+      "choices": [
+        "A. Python",
+        "B. C++",
+        "C. Ruby",
+        "D. Swift"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What paradigm does Java primarily follow?",
+      "choices": [
+        "A. Procedural",
+        "B. Object-Oriented",
+        "C. Functional",
+        "D. Logic-Based"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What is the name of the virtual machine that runs Java bytecode?",
+      "choices": [
+        "A. JDK",
+        "B. JVM",
+        "C. JRE",
+        "D. JIT"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Java was originally part of which project?",
+      "choices": [
+        "A. StarBright Project",
+        "B. Green Project",
+        "C. Jungle Project",
+        "D. SunRay Project"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Which company heavily popularized Java through mobile devices in the 2000s?",
+      "choices": [
+        "A. Nokia",
+        "B. Apple",
+        "C. IBM",
+        "D. Motorola"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What technology allowed Java apps to run inside web browsers?",
+      "choices": [
+        "A. Java Beans",
+        "B. JavaFX",
+        "C. Java Applets",
+        "D. Java Archive Tools"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What type of language is Java classified as?",
+      "choices": [
+        "A. Low-Level",
+        "B. Mid-Level",
+        "C. High-Level",
+        "D. Machine-Level"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Java's bytecode is executed using:",
+      "choices": [
+        "A. CPU Direct Execution",
+        "B. Java Virtual Machine",
+        "C. Hardware Acceleration",
+        "D. Native Compiler"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What is Java's file extension for source code?",
+      "choices": [
+        "A. .class",
+        "B. .jav",
+        "C. .java",
+        "D. .jvm"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What is the file extension for compiled Java bytecode?",
+      "choices": [
+        "A. .java",
+        "B. .class",
+        "C. .exe",
+        "D. .bin"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Which version of Java introduced lambda expressions?",
+      "choices": [
+        "A. Java 5",
+        "B. Java 6",
+        "C. Java 7",
+        "D. Java 8"
+      ],
+      "correct": 3
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What is the main purpose of the Java Community Process (JCP)?",
+      "choices": [
+        "A. Approve Java Certifications",
+        "B. Develop Java Standards",
+        "C. Monitor Java Security",
+        "D. Maintain Java IDEs"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What does JDK stand for?",
+      "choices": [
+        "A. Java Development Kit",
+        "B. Java Deployment Kernel",
+        "C. Java Device Key",
+        "D. Java Data Keeper"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "What does JRE stand for?",
+      "choices": [
+        "A. Java Runtime Environment",
+        "B. Java Resource Engine",
+        "C. Java Register Extension",
+        "D. Java Render Emulator"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Java was developed under which Sun Microsystems project name?",
+      "choices": [
+        "A. Project Conan",
+        "B. Project Vision",
+        "C. Project Oak",
+        "D. Project Green"
+      ],
+      "correct": 3
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Before its final name, what other name was almost used for Java?",
+      "choices": [
+        "A. CoffeeScript",
+        "B. Silk",
+        "C. OakTree",
+        "D. Vine"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "Which design principle heavily influenced Java's creation?",
+      "choices": [
+        "A. Speed over portability",
+        "B. Complex memory management",
+        "C. Simplicity and security",
+        "D. Platform-specific binaries"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 1: HISTORY",
+      "question": "The Java mascot 'Duke' was created by which team?",
+      "choices": [
+        "A. Oracle Developers",
+        "B. Microsoft Engineers",
+        "C. Sun Microsystems Green Team",
+        "D. Google Labs"
+      ],
+      "correct": 2
     }
-
-
   ]
 }

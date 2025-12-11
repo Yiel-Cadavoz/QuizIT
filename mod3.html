@@ -105,7 +105,12 @@
         fetch("questions3.json")
             .then(res => res.json())
             .then(data => {
-                questions = data.questions;
+                function shuffle(array) {
+                    return array.sort(() => Math.random() - 0.5);
+                }
+
+                let shuffled = shuffle(data.questions);
+                questions = shuffled.slice(0, 5);
                 userAnswers = Array(questions.length).fill(null);
                 loadQuestion(currentIndex);
             })

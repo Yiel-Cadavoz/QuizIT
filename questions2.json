@@ -9,9 +9,8 @@
         "C. @value",
         "D. -value"
       ],
-       "correct": 1
-    }
-,
+      "correct": 1
+    },
     {
       "module": "MODULE 2: BASIC SYNTAX",
       "question": " What is the correct syntax to output “Hello Java” to the console?",
@@ -21,9 +20,8 @@
         "C. System.out.println('Hello Java');",
         "D. Console.write('Hello Java');"
       ],
-       "correct": 2
-    }
-,
+      "correct": 2
+    },
     {
       "module": "MODULE 2: BASIC SYNTAX",
       "question": " What will be the output of the following code? public class Test {    public static void main(String[] args) {        int x = 5;        int y = 2;        System.out.println(x / y);    }}",
@@ -33,9 +31,8 @@
         "C. 3",
         "D. Error"
       ],
-       "correct": 1
-    }
-,
+      "correct": 1
+    },
     {
       "module": "MODULE 2: BASIC SYNTAX",
       "question": "Which of the following is not a primitive data type in Java?",
@@ -45,9 +42,8 @@
         "C. boolean",
         "D. String"
       ],
-       "correct": 3
-    }
-,
+      "correct": 3
+    },
     {
       "module": "MODULE 2: BASIC SYNTAX",
       "question": "What will the following code print? public class Example {    public static void main(String[] args) {        String lang = 'Java';        System.out.println('I love '' + lang);    }}",
@@ -57,7 +53,304 @@
         "C. I love Java",
         "D. Error"
       ],
-       "correct": 3
+      "correct": 3
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following is a valid java identifier?",
+      "choices": [
+        "A. 1value",
+        "B. _value",
+        "C. @value",
+        "D. -value"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What is the correct syntax to output “Hello Java” to the console?",
+      "choices": [
+        "A. print('Hello Java');",
+        "B. echo('Hello Java');",
+        "C. System.out.println(\"Hello Java\");",
+        "D. Console.write('Hello Java');"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What will be the output of the following code? public class Test { public static void main(String[] args) { int x = 5; int y = 2; System.out.println(x / y); }}",
+      "choices": [
+        "A. 2.5",
+        "B. 2",
+        "C. 3",
+        "D. Error"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following is not a primitive data type in Java?",
+      "choices": [
+        "A. int",
+        "B. float",
+        "C. boolean",
+        "D. String"
+      ],
+      "correct": 3
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What will the following code print? public class Example { public static void main(String[] args) { String lang = \"Java\"; System.out.println(\"I love \" + lang); }}",
+      "choices": [
+        "A. I love",
+        "B. lang",
+        "C. I love Java",
+        "D. Error"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following symbols is used to end a Java statement?",
+      "choices": [
+        "A. .",
+        "B. ;",
+        "C. :",
+        "D. ,"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which keyword is used to define a class in Java?",
+      "choices": [
+        "A. define",
+        "B. new",
+        "C. class",
+        "D. object"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which method is required as an entry point in every Java program?",
+      "choices": [
+        "A. start()",
+        "B. run()",
+        "C. main()",
+        "D. execute()"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following is a correct comment in Java?",
+      "choices": [
+        "A. # Comment",
+        "B. // Comment",
+        "C. <!-- Comment -->",
+        "D. ** Comment **"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What does the 'public' keyword mean in Java?",
+      "choices": [
+        "A. Accessible only inside the method",
+        "B. Accessible only inside the class",
+        "C. Accessible from anywhere",
+        "D. Accessible only in the package"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which data type is used to store whole numbers?",
+      "choices": [
+        "A. int",
+        "B. float",
+        "C. char",
+        "D. boolean"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which data type stores true/false values?",
+      "choices": [
+        "A. int",
+        "B. boolean",
+        "C. char",
+        "D. float"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which datatype should be used for decimal values in Java?",
+      "choices": [
+        "A. int",
+        "B. double",
+        "C. char",
+        "D. boolean"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of the following is a correct variable declaration?",
+      "choices": [
+        "A. int = x;",
+        "B. int x;",
+        "C. x int;",
+        "D. declare int x;"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of these is NOT allowed in Java variable names?",
+      "choices": [
+        "A. Underscore",
+        "B. Numbers (not at the start)",
+        "C. Spaces",
+        "D. Letters"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What will System.out.println(3 + 4 + \"Java\"); print?",
+      "choices": [
+        "A. 7Java",
+        "B. 34Java",
+        "C. Java7",
+        "D. 3 + 4Java"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which operator is used for concatenating strings?",
+      "choices": [
+        "A. *",
+        "B. &",
+        "C. +",
+        "D. %"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What is the output of System.out.println(10 % 3);?",
+      "choices": [
+        "A. 0",
+        "B. 1",
+        "C. 3",
+        "D. 10"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Java keywords are:",
+      "choices": [
+        "A. Case-sensitive",
+        "B. Written in uppercase",
+        "C. Optional",
+        "D. Non-English words"
+      ],
+      "correct": 0
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which of these is a valid Java keyword?",
+      "choices": [
+        "A. begin",
+        "B. var",
+        "C. public",
+        "D. include"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "What is the default value of an uninitialized int?",
+      "choices": [
+        "A. null",
+        "B. 1",
+        "C. 0",
+        "D. undefined"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which escape sequence creates a new line?",
+      "choices": [
+        "A. \\r",
+        "B. \\n",
+        "C. \\t",
+        "D. \\s"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which symbol is used for single-line comments?",
+      "choices": [
+        "A. /**",
+        "B. */",
+        "C. //",
+        "D. #"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which symbol is used for multi-line comments?",
+      "choices": [
+        "A. */ */",
+        "B. <!-- -->",
+        "C. /* */",
+        "D. ** **"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which operator compares two values for equality?",
+      "choices": [
+        "A. =",
+        "B. ==",
+        "C. !=",
+        "D. equals"
+      ],
+      "correct": 1
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "Which operator is used for assignment?",
+      "choices": [
+        "A. ==",
+        "B. :=",
+        "C. =",
+        "D. =>"
+      ],
+      "correct": 2
+    },
+    {
+      "module": "MODULE 2: BASIC SYNTAX",
+      "question": "How do you write a constant value in Java?",
+      "choices": [
+        "A. final int x = 10;",
+        "B. constant x = 10;",
+        "C. fixed int x = 10;",
+        "D. stable int x = 10;"
+      ],
+      "correct": 0
     }
   ]
 }

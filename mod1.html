@@ -96,10 +96,10 @@
 
 
         function updateProgress() {
-            
+
             footerCenter.textContent = `${currentIndex + 1}/${questions.length}`;
 
-           
+
             const progressPercent = ((currentIndex + 1) / questions.length) * 100;
             progressFill.style.width = `${progressPercent}%`;
         }
@@ -108,11 +108,19 @@
         fetch("questions.json")
             .then(res => res.json())
             .then(data => {
-                questions = data.questions;
+                function shuffle(array) {
+                    return array.sort(() => Math.random() - 0.5);
+                }
+
+                let shuffled = shuffle(data.questions);
+
+                questions = shuffled.slice(0, 5);
+
                 userAnswers = Array(questions.length).fill(null);
+
                 loadQuestion(currentIndex);
             })
-            .catch(err => console.error(err));
+            .catch (err => console.error(err));
 
 
         function loadQuestion(index) {
@@ -142,7 +150,7 @@
 
 
             });
-            updateProgress(); 
+            updateProgress();
             footerCenter.textContent = `${index + 1}/${questions.length}`;
         }
 
